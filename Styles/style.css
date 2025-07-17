@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.container .headerBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: gold;
+  animation: headerAnime 10s linear infinite;
+  padding: 20px 100px;
+}
+.container .headerBar .logo a {
+  color: #fff;
+}
+.container .headerBar .navBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.container .headerBar .navBar a {
+  color: #fff;
+  font-size: 17px;
+  transition: 0.5s;
+  position: relative;
+}
+.container .headerBar .navBar a:hover span {
+  width: 100%;
+}
+.container .headerBar .navBar a:hover {
+  color: #000;
+}
+.container .headerBar .navBar a span {
+  width: 0%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  transition: 0.5s;
+}
+.container .heroSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 100px;
+}
+.container .heroSection .heroTextBar {
+  width: 50%;
+}
+.container .heroSection .heroTextBar h3 {
+  color: #777;
+}
+.container .heroSection .heroTextBar h1 {
+  font-size: 65px;
+  font-weight: 900;
+  margin: 15px 0;
+}
+.container .heroSection .heroTextBar h1 span {
+  color: gold;
+  animation: headerAnime2 10s linear infinite;
+}
+.container .heroSection .heroTextBar p {
+  color: #999;
+}
+.container .heroSection .heroImageBar {
+  width: 45%;
+}
+.container .heroSection .heroImageBar img {
+  border-radius: 20px;
+}
+
+@keyframes headerAnime {
+  0% {
+    background-color: gold;
+  }
+  25% {
+    background-color: green;
+  }
+  50% {
+    background-color: chocolate;
+  }
+  75% {
+    background-color: red;
+  }
+  100% {
+    background-color: blue;
+  }
+}
+@keyframes headerAnime2 {
+  0% {
+    color: gold;
+  }
+  25% {
+    color: green;
+  }
+  50% {
+    color: chocolate;
+  }
+  75% {
+    color: red;
+  }
+  100% {
+    color: blue;
+  }
+}
+@media (max-width: 850px) {
+  .container .headerBar {
+    padding: 20px;
+  }
+  .container .heroSection {
+    padding: 30px 20px;
+  }
+  .container .heroSection .heroTextBar h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 425px) {
+  .container .headerBar {
+    flex-direction: column;
+  }
+  .container .headerBar .navBar {
+    gap: 20px;
+    margin-top: 10px;
+  }
+  .container .heroSection {
+    flex-direction: column-reverse;
+  }
+  .container .heroSection .heroImageBar {
+    width: 100%;
+  }
+  .container .heroSection .heroTextBar {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+  }
+}/*# sourceMappingURL=style.css.map */
