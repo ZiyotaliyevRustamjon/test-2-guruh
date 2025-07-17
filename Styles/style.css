@@ -74,6 +74,39 @@
 .container .heroSection .heroImageBar img {
   border-radius: 20px;
 }
+.container .serviceSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px;
+}
+.container .serviceSection .serTitle {
+  font-size: 35px;
+  animation: headerAnime2 10s linear infinite;
+}
+.container .serviceSection .cardBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.container .serviceSection .cardBar .card {
+  width: 31%;
+  background-color: rgba(255, 217, 0, 0.274);
+  padding: 15px;
+  border-radius: 10px;
+}
+.container .serviceSection .cardBar .card img {
+  border-radius: 7px;
+}
+.container .serviceSection .cardBar .card h1 {
+  margin: 10px 0;
+  animation: headerAnime2 10s linear infinite;
+}
+.container .serviceSection .cardBar .card p {
+  color: #666;
+}
 
 @keyframes headerAnime {
   0% {
